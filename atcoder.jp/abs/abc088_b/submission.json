@@ -1,6 +1,6 @@
 {
-	"id": 33751128,
-	"epoch_second": 1659534928,
+	"id": 33751376,
+	"epoch_second": 1659535539,
 	"problem_id": "abc088_b",
 	"contest_id": "abs",
 	"user_id": "akkinoc",
@@ -8,5 +8,5 @@
 	"point": 200,
 	"length": 235,
 	"result": "AC",
-	"execution_time": 137
+	"execution_time": 119
 }
