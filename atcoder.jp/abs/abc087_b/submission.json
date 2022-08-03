@@ -1,0 +1,12 @@
+{
+	"id": 33749170,
+	"epoch_second": 1659529167,
+	"problem_id": "abc087_b",
+	"contest_id": "abs",
+	"user_id": "akkinoc",
+	"language": "Kotlin (1.3.71)",
+	"point": 200,
+	"length": 301,
+	"result": "AC",
+	"execution_time": 93
+}
