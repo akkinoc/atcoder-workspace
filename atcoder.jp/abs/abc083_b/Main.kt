@@ -1,9 +1,8 @@
 fun main() {
     val (n, a, b) = readLine()!!.split(" ").map { it.toInt() }
     val ab = a..b
-    var sum = 0
-    for (v in 1..n) if (v.sumOfDigits() in ab) sum += v
-    print(sum)
+    val r = (1..n).sumBy { if (it.sumOfDigits() in ab) it else 0 }
+    print(r)
 }
 
 fun Int.sumOfDigits(): Int {
