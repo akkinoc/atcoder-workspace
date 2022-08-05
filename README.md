@@ -1,3 +1,3 @@
-# atcoder-archive
+# atcoder-workspace
 
-My accepted code to AtCoder.  
+My personal workspace for solving AtCoder problems.  
