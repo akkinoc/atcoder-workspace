@@ -2,7 +2,7 @@ import kotlin.math.abs
 
 fun main() {
     val n = readLine()!!.toInt()
-    val r = (1..n).mapTo(mutableListOf()) { Rec(readLine()!!.split(" ").map { it.toInt() }) }
+    val r = (1..n).map { Rec(readLine()!!.split(" ").map { it.toInt() }) }
     var c = Rec()
     r.forEach { if (c.reach(it)) c = it else return print("No") }
     print("Yes")
