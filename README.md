@@ -1,11 +1,14 @@
 # atcoder-workspace
 
 [![atcoder badge]][atcoder]
+[![archive badge]][archive]
 [![license badge]][license]
 [![sponsor badge]][sponsor]
 
 [atcoder]: https://atcoder.jp/users/akkinoc
 [atcoder badge]: https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fakkinoc&label=atcoder
+[archive]: https://github.com/akkinoc/atcoder-workspace/actions/workflows/archive.yml
+[archive badge]: https://github.com/akkinoc/atcoder-workspace/actions/workflows/archive.yml/badge.svg
 [license]: LICENSE.txt
 [license badge]: https://img.shields.io/github/license/akkinoc/atcoder-workspace?color=blue
 [sponsor]: https://github.com/sponsors/akkinoc
