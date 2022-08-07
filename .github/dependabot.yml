@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: maven
+    directory: /kotlin
+    schedule:
+      interval: daily
+    labels:
+      - type:dependencies
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+    labels:
+      - type:dependencies
