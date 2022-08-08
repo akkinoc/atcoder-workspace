@@ -14,17 +14,9 @@ jobs:
         uses: actions/setup-go@v3.2.1
         with:
           go-version: 1.19
-      - name: Cache the Go local modules
-        uses: actions/cache@v3.0.6
-        with:
-          path: ~/go/pkg/mod
-          key: go
-          restore-keys: go
-      - name: Install procon-gardener
-        run: go install github.com/togatoga/procon-gardener@7128766
-      - name: Setup procon-gardener
-        run: ln -s $GITHUB_WORKSPACE/.procon-gardener ~/.procon-gardener
       - name: Archive AC submissions
-        run: ~/go/bin/procon-gardener archive
-      - name: Update the Git remote repository
-        run: git push
+        run: |
+          go install github.com/togatoga/procon-gardener@7128766db47e47ab088808ee7ec000fb1c673c28
+          ln -s $PWD/.procon-gardener ~/.procon-gardener
+          procon-gardener archive
+          git push
