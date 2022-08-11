@@ -1,15 +1,13 @@
-import io.kotest.matchers.collections.shouldContainExactly
+import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
-import org.junitpioneer.jupiter.StdIo
-import org.junitpioneer.jupiter.StdOut
 
 class MainTest {
 
+    private val invoke: MainInvoker = MainInvoker()
+
     @Test
-    @StdIo("""test""")
-    fun test(out: StdOut) {
-        main()
-        out.capturedLines().shouldContainExactly("""test""")
+    fun test() {
+        invoke("test").shouldBe("test")
     }
 
 }

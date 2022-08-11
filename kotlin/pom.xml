@@ -74,12 +74,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.junit-pioneer</groupId>
-            <artifactId>junit-pioneer</artifactId>
-            <version>1.7.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>io.kotest</groupId>
             <artifactId>kotest-assertions-core-jvm</artifactId>
             <version>5.4.1</version>
