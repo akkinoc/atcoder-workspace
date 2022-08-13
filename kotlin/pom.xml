@@ -235,6 +235,7 @@
                 <configuration>
                     <buildUponDefaultConfig>true</buildUponDefaultConfig>
                     <config>.detekt/config.yml</config>
+                    <excludes>${basedir}/src/main/kotlin/Main.kt</excludes>
                 </configuration>
                 <executions>
                     <execution>

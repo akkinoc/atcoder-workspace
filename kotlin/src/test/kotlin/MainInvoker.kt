@@ -2,8 +2,20 @@ import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 
-class MainInvoker(private val fn: () -> Unit = { main() }, private val log: PrintStream = System.out) {
+/**
+ * The main function invoker.
+ *
+ * @property log The logger.
+ * @property fn The main function.
+ */
+class MainInvoker(private val log: PrintStream = System.out, private val fn: () -> Unit = { main() }) {
 
+    /**
+     * Invokes the main function.
+     *
+     * @param input The standard input.
+     * @return The standard output.
+     */
     operator fun invoke(input: String): String {
         val result = runCatching { input(input) { output { fn() } } }
         log.println("--------------------------------------------------")
@@ -21,6 +33,14 @@ class MainInvoker(private val fn: () -> Unit = { main() }, private val log: Prin
         return result.getOrThrow()
     }
 
+    /**
+     * Replaces the standard input and runs the function.
+     *
+     * @param <R> The return value type of the function.
+     * @param input The standard input.
+     * @param fn The function.
+     * @return The return value of the function.
+     */
     private fun <R> input(input: String, fn: () -> R): R {
         return ByteArrayInputStream(input.toByteArray()).use { inputStream ->
             val origin = System.`in`.also { System.setIn(inputStream) }
@@ -28,6 +48,12 @@ class MainInvoker(private val fn: () -> Unit = { main() }, private val log: Prin
         }
     }
 
+    /**
+     * Replaces the standard output and runs the function.
+     *
+     * @param fn The function.
+     * @return The standard output.
+     */
     private fun output(fn: () -> Unit): String {
         return ByteArrayOutputStream().use { outputStream ->
             PrintStream(outputStream).use { printStream ->

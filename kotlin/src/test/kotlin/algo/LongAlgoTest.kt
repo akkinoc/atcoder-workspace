@@ -5,6 +5,9 @@ import algo.LongAlgo.lcm
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 
+/**
+ * Tests [LongAlgo].
+ */
 class LongAlgoTest {
 
     @Test

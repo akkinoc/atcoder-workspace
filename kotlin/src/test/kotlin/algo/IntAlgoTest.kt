@@ -5,6 +5,9 @@ import algo.IntAlgo.lcm
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 
+/**
+ * Tests [IntAlgo].
+ */
 class IntAlgoTest {
 
     @Test
