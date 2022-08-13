@@ -8,7 +8,7 @@ import java.io.PrintStream
  * The main function invoker.
  *
  * @property log The logger.
- * @property fn The main function.
+ * @property fn The function that invokes the main function.
  */
 class MainInvoker(private val log: PrintStream = System.out, private val fn: () -> Unit) {
 
