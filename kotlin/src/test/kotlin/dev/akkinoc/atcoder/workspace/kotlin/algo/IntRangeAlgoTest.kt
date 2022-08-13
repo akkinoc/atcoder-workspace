@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test
 class IntRangeAlgoTest {
 
     @Test
-    fun bsearch() {
+    fun `test - bsearch`() {
         (30..50).bsearch { it >= 36 }.shouldBe(36)
         (30..50).bsearch { it >= 50 }.shouldBe(50)
         (30..50).bsearch { it >= 0 }.shouldBe(30)

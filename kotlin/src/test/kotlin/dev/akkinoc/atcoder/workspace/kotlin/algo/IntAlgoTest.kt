@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test
 class IntAlgoTest {
 
     @Test
-    fun gcd() {
+    fun `test - gcd`() {
         (30 gcd 50).shouldBe(10)
         (30 gcd 1).shouldBe(1)
         (1 gcd 50).shouldBe(1)
@@ -23,7 +23,7 @@ class IntAlgoTest {
     }
 
     @Test
-    fun lcm() {
+    fun `test - lcm`() {
         (30 lcm 50).shouldBe(150)
         (30 lcm 1).shouldBe(30)
         (1 lcm 50).shouldBe(50)

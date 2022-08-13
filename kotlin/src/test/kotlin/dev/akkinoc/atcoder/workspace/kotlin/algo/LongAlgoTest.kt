@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test
 class LongAlgoTest {
 
     @Test
-    fun gcd() {
+    fun `test - gcd`() {
         (30L gcd 50L).shouldBe(10L)
         (30L gcd 1L).shouldBe(1L)
         (1L gcd 50L).shouldBe(1L)
@@ -23,7 +23,7 @@ class LongAlgoTest {
     }
 
     @Test
-    fun lcm() {
+    fun `test - lcm`() {
         (30L lcm 50L).shouldBe(150L)
         (30L lcm 1L).shouldBe(30L)
         (1L lcm 50L).shouldBe(50L)

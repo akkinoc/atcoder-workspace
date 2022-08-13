@@ -10,7 +10,7 @@ class MainTest {
     private val invoke: MainInvoker = MainInvoker { main() }
 
     @Test
-    fun test() {
+    fun `test - main`() {
         invoke("test").shouldBe("test")
     }
 

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test
 class LongRangeAlgoTest {
 
     @Test
-    fun bsearch() {
+    fun `test - bsearch`() {
         (30L..50L).bsearch { it >= 36L }.shouldBe(36L)
         (30L..50L).bsearch { it >= 50L }.shouldBe(50L)
         (30L..50L).bsearch { it >= 0L }.shouldBe(30L)
