@@ -1,3 +1,4 @@
+import dev.akkinoc.atcoder.workspace.kotlin.test.MainInvoker
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 
@@ -6,7 +7,7 @@ import org.junit.jupiter.api.Test
  */
 class MainTest {
 
-    private val invoke: MainInvoker = MainInvoker()
+    private val invoke: MainInvoker = MainInvoker { main() }
 
     @Test
     fun test() {

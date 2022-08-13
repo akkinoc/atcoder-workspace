@@ -1,3 +1,5 @@
+package dev.akkinoc.atcoder.workspace.kotlin.test
+
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
@@ -8,7 +10,7 @@ import java.io.PrintStream
  * @property log The logger.
  * @property fn The main function.
  */
-class MainInvoker(private val log: PrintStream = System.out, private val fn: () -> Unit = { main() }) {
+class MainInvoker(private val log: PrintStream = System.out, private val fn: () -> Unit) {
 
     /**
      * Invokes the main function.

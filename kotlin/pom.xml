@@ -202,8 +202,8 @@
                 <version>1.7.10</version>
                 <configuration>
                     <includes>
-                        <include>src/main/kotlin/module.md</include>
-                        <include>src/main/kotlin/package.md</include>
+                        <include>src/main/kotlin/dev/akkinoc/atcoder/workspace/kotlin/module.md</include>
+                        <include>src/main/kotlin/dev/akkinoc/atcoder/workspace/kotlin/package.md</include>
                     </includes>
                 </configuration>
                 <executions>

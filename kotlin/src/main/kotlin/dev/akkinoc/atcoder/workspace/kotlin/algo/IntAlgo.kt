@@ -1,4 +1,4 @@
-package algo
+package dev.akkinoc.atcoder.workspace.kotlin.algo
 
 /**
  * The algorithms for [Int].

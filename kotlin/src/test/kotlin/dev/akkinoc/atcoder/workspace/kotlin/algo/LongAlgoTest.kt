@@ -1,7 +1,7 @@
-package algo
+package dev.akkinoc.atcoder.workspace.kotlin.algo
 
-import algo.LongAlgo.gcd
-import algo.LongAlgo.lcm
+import dev.akkinoc.atcoder.workspace.kotlin.algo.LongAlgo.gcd
+import dev.akkinoc.atcoder.workspace.kotlin.algo.LongAlgo.lcm
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 
