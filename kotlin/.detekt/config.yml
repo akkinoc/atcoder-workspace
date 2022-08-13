@@ -1,0 +1,28 @@
+complexity:
+  TooManyFunctions:
+    ignoreDeprecated: true
+    ignoreOverridden: true
+    ignorePrivate: true
+formatting:
+  ImportOrdering:
+    active: true
+  NoBlankLineBeforeRbrace:
+    active: false
+  ParameterListWrapping:
+    active: false
+performance:
+  SpreadOperator:
+    active: false
+style:
+  ClassOrdering:
+    active: true
+  ForbiddenComment:
+    active: false
+  FunctionOnlyReturningConstant:
+    active: false
+  NoTabs:
+    active: true
+  SerialVersionUIDInSerializableClass:
+    active: false
+  UnusedPrivateMember:
+    allowedNames: (readObject|readObjectNoData|readResolve|serialVersionUID|writeObject|writeReplace)
