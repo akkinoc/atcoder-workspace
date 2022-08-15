@@ -10,13 +10,13 @@ object IntRangeAlgo {
      *
      * @receiver A number range.
      * @param fn The function that determines whether an element is selected.
-     * @return The first element selected, or the last value + 1 if not found.
+     * @return The first element selected, or `null` if not found.
      */
-    fun IntRange.bsearch(fn: (n: Int) -> Boolean): Int {
-        var l = this.first - 1
-        var r = this.last + 1
+    fun IntRange.bsearch(fn: (e: Int) -> Boolean): Int? {
+        var l = first - 1
+        var r = last + 1
         while (l < r - 1) (l + (r - l ushr 1)).also { if (fn(it)) r = it else l = it }
-        return r
+        return r.takeIf { it <= last }
     }
 
 }
