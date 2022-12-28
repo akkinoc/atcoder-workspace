@@ -16,14 +16,20 @@ class ListAlgoTest {
     @Test
     fun `test - perm`() {
         listOf('A', 'B', 'C').perm(3).shouldContainExactly(
-            listOf('A', 'B', 'C'), listOf('A', 'C', 'B'),
-            listOf('B', 'A', 'C'), listOf('B', 'C', 'A'),
-            listOf('C', 'A', 'B'), listOf('C', 'B', 'A')
+            listOf('A', 'B', 'C'),
+            listOf('A', 'C', 'B'),
+            listOf('B', 'A', 'C'),
+            listOf('B', 'C', 'A'),
+            listOf('C', 'A', 'B'),
+            listOf('C', 'B', 'A')
         )
         listOf('A', 'B', 'C').perm(2).shouldContainExactly(
-            listOf('A', 'B'), listOf('A', 'C'),
-            listOf('B', 'A'), listOf('B', 'C'),
-            listOf('C', 'A'), listOf('C', 'B')
+            listOf('A', 'B'),
+            listOf('A', 'C'),
+            listOf('B', 'A'),
+            listOf('B', 'C'),
+            listOf('C', 'A'),
+            listOf('C', 'B')
         )
         listOf('A', 'B', 'C').perm(1).shouldContainExactly(listOf('A'), listOf('B'), listOf('C'))
         listOf('A', 'B', 'C').perm(0).shouldContainExactly(emptyList())
@@ -34,20 +40,44 @@ class ListAlgoTest {
     @Test
     fun `test - rperm`() {
         listOf('A', 'B', 'C').rperm(3).shouldContainExactly(
-            listOf('A', 'A', 'A'), listOf('A', 'A', 'B'), listOf('A', 'A', 'C'),
-            listOf('A', 'B', 'A'), listOf('A', 'B', 'B'), listOf('A', 'B', 'C'),
-            listOf('A', 'C', 'A'), listOf('A', 'C', 'B'), listOf('A', 'C', 'C'),
-            listOf('B', 'A', 'A'), listOf('B', 'A', 'B'), listOf('B', 'A', 'C'),
-            listOf('B', 'B', 'A'), listOf('B', 'B', 'B'), listOf('B', 'B', 'C'),
-            listOf('B', 'C', 'A'), listOf('B', 'C', 'B'), listOf('B', 'C', 'C'),
-            listOf('C', 'A', 'A'), listOf('C', 'A', 'B'), listOf('C', 'A', 'C'),
-            listOf('C', 'B', 'A'), listOf('C', 'B', 'B'), listOf('C', 'B', 'C'),
-            listOf('C', 'C', 'A'), listOf('C', 'C', 'B'), listOf('C', 'C', 'C')
+            listOf('A', 'A', 'A'),
+            listOf('A', 'A', 'B'),
+            listOf('A', 'A', 'C'),
+            listOf('A', 'B', 'A'),
+            listOf('A', 'B', 'B'),
+            listOf('A', 'B', 'C'),
+            listOf('A', 'C', 'A'),
+            listOf('A', 'C', 'B'),
+            listOf('A', 'C', 'C'),
+            listOf('B', 'A', 'A'),
+            listOf('B', 'A', 'B'),
+            listOf('B', 'A', 'C'),
+            listOf('B', 'B', 'A'),
+            listOf('B', 'B', 'B'),
+            listOf('B', 'B', 'C'),
+            listOf('B', 'C', 'A'),
+            listOf('B', 'C', 'B'),
+            listOf('B', 'C', 'C'),
+            listOf('C', 'A', 'A'),
+            listOf('C', 'A', 'B'),
+            listOf('C', 'A', 'C'),
+            listOf('C', 'B', 'A'),
+            listOf('C', 'B', 'B'),
+            listOf('C', 'B', 'C'),
+            listOf('C', 'C', 'A'),
+            listOf('C', 'C', 'B'),
+            listOf('C', 'C', 'C')
         )
         listOf('A', 'B', 'C').rperm(2).shouldContainExactly(
-            listOf('A', 'A'), listOf('A', 'B'), listOf('A', 'C'),
-            listOf('B', 'A'), listOf('B', 'B'), listOf('B', 'C'),
-            listOf('C', 'A'), listOf('C', 'B'), listOf('C', 'C')
+            listOf('A', 'A'),
+            listOf('A', 'B'),
+            listOf('A', 'C'),
+            listOf('B', 'A'),
+            listOf('B', 'B'),
+            listOf('B', 'C'),
+            listOf('C', 'A'),
+            listOf('C', 'B'),
+            listOf('C', 'C')
         )
         listOf('A', 'B', 'C').rperm(1).shouldContainExactly(listOf('A'), listOf('B'), listOf('C'))
         listOf('A', 'B', 'C').rperm(0).shouldContainExactly(emptyList())
@@ -68,14 +98,24 @@ class ListAlgoTest {
     @Test
     fun `test - rcomb`() {
         listOf('A', 'B', 'C').rcomb(3).shouldContainExactly(
-            listOf('A', 'A', 'A'), listOf('A', 'A', 'B'), listOf('A', 'A', 'C'),
-            listOf('A', 'B', 'B'), listOf('A', 'B', 'C'), listOf('A', 'C', 'C'),
-            listOf('B', 'B', 'B'), listOf('B', 'B', 'C'), listOf('B', 'C', 'C'),
+            listOf('A', 'A', 'A'),
+            listOf('A', 'A', 'B'),
+            listOf('A', 'A', 'C'),
+            listOf('A', 'B', 'B'),
+            listOf('A', 'B', 'C'),
+            listOf('A', 'C', 'C'),
+            listOf('B', 'B', 'B'),
+            listOf('B', 'B', 'C'),
+            listOf('B', 'C', 'C'),
             listOf('C', 'C', 'C')
         )
         listOf('A', 'B', 'C').rcomb(2).shouldContainExactly(
-            listOf('A', 'A'), listOf('A', 'B'), listOf('A', 'C'),
-            listOf('B', 'B'), listOf('B', 'C'), listOf('C', 'C')
+            listOf('A', 'A'),
+            listOf('A', 'B'),
+            listOf('A', 'C'),
+            listOf('B', 'B'),
+            listOf('B', 'C'),
+            listOf('C', 'C')
         )
         listOf('A', 'B', 'C').rcomb(1).shouldContainExactly(listOf('A'), listOf('B'), listOf('C'))
         listOf('A', 'B', 'C').rcomb(0).shouldContainExactly(emptyList())
