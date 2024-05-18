@@ -17,5 +17,5 @@ jobs:
       - name: Archive AC submissions
         run: |
           ln -s $PWD/.procon-gardener ~/.procon-gardener
-          go run github.com/togatoga/procon-gardener@7128766db47e47ab088808ee7ec000fb1c673c28 archive
+          go run github.com/togatoga/procon-gardener@d66e407167c781e1477067f074854cca91d66858 archive
           git push
