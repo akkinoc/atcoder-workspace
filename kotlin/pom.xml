@@ -52,10 +52,11 @@
     </ciManagement>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <kotlin.version>1.8.22</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kotlin.compiler.languageVersion>1.3</kotlin.compiler.languageVersion>
+        <kotlin.compiler.apiVersion>1.8</kotlin.compiler.apiVersion>
+        <kotlin.compiler.languageVersion>${kotlin.compiler.apiVersion}</kotlin.compiler.languageVersion>
         <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>

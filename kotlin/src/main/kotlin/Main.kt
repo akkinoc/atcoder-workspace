@@ -1,4 +1,4 @@
 fun main() {
-    val s = readLine()!!
+    val s = readln()
     print(s)
 }
