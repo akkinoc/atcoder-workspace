@@ -37,8 +37,8 @@
 
     <scm>
         <url>https://github.com/akkinoc/atcoder-workspace</url>
-        <connection>scm:git:git@github.com:akkinoc/atcoder-workspace.git</connection>
-        <developerConnection>scm:git:git@github.com:akkinoc/atcoder-workspace.git</developerConnection>
+        <connection>scm:git:https://github.com/akkinoc/atcoder-workspace.git</connection>
+        <developerConnection>scm:git:https://github.com/akkinoc/atcoder-workspace.git</developerConnection>
     </scm>
 
     <issueManagement>
