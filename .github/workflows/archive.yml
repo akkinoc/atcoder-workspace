@@ -1,4 +1,4 @@
-name: archive
+name: Archive
 on:
   schedule:
     - cron: 0 12 * * *
