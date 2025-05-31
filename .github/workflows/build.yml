@@ -7,6 +7,8 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-24.04
+    env:
+      MAVEN_ARGS: -B --color always
     steps:
       - name: Checkout the Git repository
         uses: actions/checkout@v4.2.2
@@ -17,7 +19,7 @@ jobs:
           java-version: 17
           cache: maven
       - name: Build the Kotlin project
-        run: mvn -B clean install
+        run: mvn clean install
         working-directory: kotlin
       - name: Upload the coverage report to Codecov
         uses: codecov/codecov-action@v5.4.3
