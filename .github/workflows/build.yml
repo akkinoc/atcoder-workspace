@@ -25,6 +25,6 @@ jobs:
         run: mvn clean install
         working-directory: kotlin
       - name: Upload the coverage report to Codecov
-        uses: codecov/codecov-action@v5.5.0
+        uses: codecov/codecov-action@v5.5.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
